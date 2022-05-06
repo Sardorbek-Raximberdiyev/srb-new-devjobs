@@ -13,24 +13,37 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="main-content">
     <header class="header">
         <div class="container header-container">
-          <a class="header-icon-link" href="#"><img src="images/devjobs.svg" alt="header icon" class="header-icon-img"></a>
-          <form class="wrapp" action="https://echo.html/academy.ru">
-            <input class="dark-more visually-hidden" name="checbox-radio" type="radio" id="dark-more">
-            <input class="light-more visually-hidden" name="checbox-radio" type="radio" id="light-more">
-            <label for="dark-more">
-              <img src="images/sun.svg" alt="rasm">
-            </label>
-            <div class="checbox">
-              <span class="retangle"></span>
-              <label class="dark-more-label" for="dark-more"></label>
-              <label class="light-more-label" for="light-more"></label>
+          <form class="wrapper" action="https://echo.html/academy.ru">
+            <div class="header-top">
+              <a class="header-icon-link" href="#"><img src="images/devjobs.svg" alt="header icon" class="header-icon-img"></a>
+              <div class="input-block">
+                <input class="dark-more visually-hidden" name="checbox-radio" type="radio" id="dark-more">
+                <input class="light-more visually-hidden" name="checbox-radio" type="radio" id="light-more">
+                <label for="dark-more">
+                  <img src="images/sun.svg" alt="rasm" width="20" height="19">
+                </label>
+                <div class="checbox">
+                  <span class="retangle"></span>
+                  <label class="dark-more-label" for="dark-more"></label>
+                  <label class="light-more-label" for="light-more"></label>
+                </div>
+                <label for="light-more">
+                  <img src="images/month.svg" alt="rasm" width="12" height="12">
+                </label>
+              </div>
             </div>
-            <label for="light-more">
-              <img src="images/month.svg" alt="rasm">
-            </label>
+            <div class="wrapp">
+              <input class="wrapp-input" type="text" placeholder="Filter by title, companies, expertise…" required>
+              <input class="wrapp-location" type="url" placeholder="Filter by location…">
+              <div class="wrapp-box">
+              <input class="checbox-input" type="checkbox">
+              <span>Full Time Only</span>
+              <button class="box-btn btn" type="submit">Search</button>
+              </div>
+            </div>
           </form>
         </div>
     </header>
@@ -38,7 +51,144 @@
     <!-- SITE-MAIN -->
     <main class="site-main">
       <div class="container">
-      <input type="text" placeholder="Filter by title, companies, expertise…">
+        <ul class="hero-list">
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/Scoot.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">5h ago</span>
+              <span class="box-bottom">Full Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Senior Software Engineer</a></h2>
+            <span class="scoot">Scoot</span>
+            <a class="hero-item-bottom-link" href="#">United Kingdom</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/pureScript.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">20h ago</span>
+              <span class="box-bottom">Part Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Haskell and PureScript Dev</a></h2>
+            <span class="scoot">Blogr</span>
+            <a class="hero-item-bottom-link" href="#">United States</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/back-End.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">1h ago</span>
+              <span class="box-bottom">Part Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Midlevel Back End Engineer </a></h2>
+            <span class="scoot">Vector</span>
+            <a class="hero-item-bottom-link" href="#">Russia</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/Application.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">2h ago</span>
+              <span class="box-bottom">Full Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Senior Application Engineer</a></h2>
+            <span class="scoot">Office Lite</span>
+            <a class="hero-item-bottom-link" href="#">Japan</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/remote.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">2h ago</span>
+              <span class="box-bottom">Part Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Remote DevOps Engineer</a></h2>
+            <span class="scoot">Pod</span>
+            <a class="hero-item-bottom-link" href="#">Thailand</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/supper-manager.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">4h ago</span>
+              <span class="box-bottom">Part Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Desktop Support Manager</a></h2>
+            <span class="scoot">Creative</span>
+            <a class="hero-item-bottom-link" href="#">Germany</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/ios-engineer.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">1w ago</span>
+              <span class="box-bottom">Full Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">iOS Engineer</a></h2>
+            <span class="scoot">Pomodoro</span>
+            <a class="hero-item-bottom-link" href="#">United States</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/ejb-developer.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">1w ago</span>
+              <span class="box-bottom">part Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Senior EJB Developer</a></h2>
+            <span class="scoot">Pod</span>
+            <a class="hero-item-bottom-link" href="#">Thailand</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/lead-engineer.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">1w ago</span>
+              <span class="box-bottom">Part Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Senior Frontend Developer</a></h2>
+            <span class="scoot">Coffeeroasters</span>
+            <a class="hero-item-bottom-link" href="#">United Kingdom</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/website-designer.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">2w ago</span>
+              <span class="box-bottom">Full Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">App & Website Designer</a></h2>
+            <span class="scoot">Mastercraft</span>
+            <a class="hero-item-bottom-link" href="#">United States</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/fullstack-developer.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">1mo ago</span>
+              <span class="box-bottom">Part Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Fullstack Developer</a></h2>
+            <span class="scoot">Crowdfund</span>
+            <a class="hero-item-bottom-link" href="#">New Zealand</a>
+          </li>
+
+          <li class="hero-item">
+            <img class="hero-item-img" src="images/lead-engineer.svg" alt="icon rasm" width="50" height="50">
+            <div class="hero-item-box">
+              <span class="box-top">4d ago</span>
+              <span class="box-bottom">Part Time</span>
+            </div>
+            <h2 class="hero-item-title"><a class="hero-item-title-link" href="#">Technical Lead Engineer</a></h2>
+            <span class="scoot">Typemaster</span>
+            <a class="hero-item-bottom-link" href="#">United Kingdom</a>
+          </li>
+        </ul>
+
+        <div class="load-more">
+          <a class="load-more-btn btn" href="#">Load More</a>
+        </div>
 
       </div>
     </main>
@@ -46,6 +196,6 @@
 
   <!--JS STYLES -->
 
-  <script src="js/main.js"></script>
+  <script src="js/styles.js"></script>
 </body>
 </html>
